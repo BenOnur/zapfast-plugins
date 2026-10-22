@@ -6,4 +6,4 @@ Emoji düğmesinin hemen sağına çıkartma simgesi ekler. Tıklanınca mevcut 
 - `label`: düğmenin açıklaması.
 - Varsayılan olarak açık; Plugins ekranından kapatılınca düğme kaldırılır.
 
-[İndir](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.0.0/quick_stickers.zip) · [Kurulum ve uyumluluk](../../README.md#kurulum)
+[İndir](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/quick_stickers.zip) · [Kurulum ve uyumluluk](../../README.md#kurulum)

@@ -8,10 +8,10 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "dist"
 OUTPUT.mkdir(exist_ok=True)
 checksums = []
-for plugin_id in ("quick_stickers", "bugfix"):
+for plugin_id in ("anti_delete", "auto_reply", "notification_throttle", "quoter", "quick_stickers", "bugfix"):
     directory = ROOT / "plugins" / plugin_id
     manifest = json.loads((directory / "plugin.json").read_text(encoding="utf-8"))
-    if manifest["id"] != plugin_id or manifest["api_version"] != 3:
+    if manifest["id"] != plugin_id or manifest["api_version"] not in (1, 2, 3):
         raise ValueError(f"Unexpected manifest: {plugin_id}")
     destination = OUTPUT / f"{plugin_id}.zip"
     with zipfile.ZipFile(destination, "w", compression=zipfile.ZIP_DEFLATED) as archive:

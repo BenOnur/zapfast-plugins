@@ -11,4 +11,4 @@ Birden fazla düzeltmeyi ayrı ayarlarla barındıran genel eklenti.
 
 Gerekli kancalar: API v3 `on_layout` ve `on_media_policy`. İkincisi eklendiği için eski API v3 host'ları da bu güncelleme için yeterli olmayabilir; [host uyumluluğunu kontrol et](../../README.md#uyumluluk).
 
-[İndir](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.0.0/bugfix.zip) · [Kurulum](../../README.md#kurulum)
+[İndir](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/bugfix.zip) · [Kurulum](../../README.md#kurulum)
