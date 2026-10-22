@@ -1,0 +1,21 @@
+{
+  "api_version": 3,
+  "id": "bugfix",
+  "name": "bugfix",
+  "description": "Arayüz hata düzeltmeleri.",
+  "default_enabled": true,
+  "hooks": [
+    "on_layout",
+    "on_media_policy"
+  ],
+  "settings": {
+    "header_title_width": true,
+    "sticker_preview": true
+  },
+  "ui": {
+    "labels": {
+      "header_title_width": "Sohbet adı kullanılabilir alanı doldursun",
+      "sticker_preview": "Çıkartmaları animasyonu beklemeden göster"
+    }
+  }
+}
