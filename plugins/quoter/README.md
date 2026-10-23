@@ -1,9 +1,11 @@
 # Quoter
 
-Mesajın sağ tık menüsündeki Quote ile düzenlenebilir alıntı kartı oluşturur. Profil fotoğrafı, metin ve isim yerleşimini betik belirler; host sınırlı sahneyi çizer ve PNG, pano veya ek olarak dışa aktarır. Ek olarak hazırlamak otomatik mesaj göndermez.
+[English](README.md) | [Türkçe](README.tr.md)
 
-- Host: API v2 veya daha yeni; fork v0.19.1 destekler.
-- `menu_label`: menü adı.
-- Boyut, renk, yazı boyutu, profil görseli ve metin konumu ayarları Plugins ekranındadır.
+Use Quote in a message's context menu to create an editable quote card. The script controls avatar, text, and author placement; the host renders the bounded scene and exports it as PNG, clipboard content, or an attachment. Preparing an attachment does not send it automatically.
 
-[İndir](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/quoter.zip) · [Kurulum](../../README.md#kurulum)
+- Host: API v2 or newer; fork v0.19.1 is supported.
+- `menu_label`: the context-menu label.
+- Card dimensions, colors, font size, avatar size, and text placement are configurable in Plugins.
+
+[Download](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/quoter.zip) | [Installation](../../README.md#installation)

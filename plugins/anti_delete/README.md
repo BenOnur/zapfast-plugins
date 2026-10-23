@@ -1,9 +1,11 @@
 # Anti-Delete
 
-Yerelde alınmış mesajlar silindiğinde mevcut içeriği korur. Uygun yeni ses/video dosyalarını ayarlanan sınıra kadar önceden indirir. Hiç alınmamış içeriği geri getiremez. Kapatılması yeni korumayı durdurur; saklanmış eski dosyaları silmez.
+[English](README.md) | [Türkçe](README.tr.md)
 
-- Host: API v2 veya daha yeni; fork v0.19.1 destekler.
-- `retain`: yeni silinmiş içerikleri koruma, varsayılan açık.
-- `max_media_mib`: varsayılan 64 MiB; host ayrıca kendi 64 MiB sınırını uygular.
+Retains locally received content when a message is deleted. Proactively downloads eligible new audio/video within the configured limit. It cannot recover content never received. Disabling it stops future retention; it does not erase previously retained files.
 
-[İndir](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/anti_delete.zip) · [Kurulum](../../README.md#kurulum)
+- Host: API v2 or newer; fork v0.19.1 is supported.
+- `retain`: retain newly deleted content; enabled by default.
+- `max_media_mib`: 64 MiB by default; the host also enforces its own 64 MiB limit.
+
+[Download](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/anti_delete.zip) | [Installation](../../README.md#installation)

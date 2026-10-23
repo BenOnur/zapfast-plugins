@@ -1,9 +1,11 @@
-# Hızlı Çıkartmalar
+# Quick Stickers
 
-Emoji düğmesinin hemen sağına çıkartma simgesi ekler. Tıklanınca mevcut seçicinin doğrudan Çıkartmalar sekmesi açılır; tekrar tıklanınca kapanır.
+[English](README.md) | [Türkçe](README.tr.md)
 
-- Gerekli kanca: `on_composer_tools` (API v3).
-- `label`: düğmenin açıklaması.
-- Varsayılan olarak açık; Plugins ekranından kapatılınca düğme kaldırılır.
+Adds a sticker button immediately to the right of the emoji button. Clicking it opens the existing picker's Stickers tab directly; clicking again closes it.
 
-[İndir](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/quick_stickers.zip) · [Kurulum ve uyumluluk](../../README.md#kurulum)
+- Required hook: `on_composer_tools` (API v3).
+- `label`: the button's tooltip.
+- Enabled by default; disabling the plugin removes the button.
+
+[Download](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/quick_stickers.zip) | [Installation](../../README.md#installation)

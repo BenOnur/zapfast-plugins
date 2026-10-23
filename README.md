@@ -1,39 +1,41 @@
-# ZapFast Eklentileri
+# ZapFast Plugins
 
-[BenOnur/ZapFast](https://github.com/BenOnur/zapfast) için ayrı ayrı indirilebilen, isteğe bağlı yerel eklentiler. Her eklentinin kendi klasörü, manifesti ve Rhai dosyası var.
+[English](README.md) | [Türkçe](README.tr.md)
 
-## Eklentiler ve indirme
+Optional local plugins for [BenOnur/ZapFast](https://github.com/BenOnur/zapfast), available as separate downloads. Each plugin has its own folder, manifest, Rhai script, and documentation.
 
-| Eklenti | Ne yapar? | İndir | Kaynak / ayarlar |
+## Plugins and downloads
+
+| Plugin | What it does | Download | Source and settings |
 | --- | --- | --- | --- |
-| **Anti-Delete** | Yerelde alınmış silinen içerikleri korur; uygun ses/video dosyalarını saklar. | [anti_delete.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/anti_delete.zip) | [anti_delete](plugins/anti_delete/) |
-| **Auto Responder** | Seçilen sohbetlerde tanımlanan komutlara ayarlanabilir gecikmeyle yanıt verir. | [auto_reply.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/auto_reply.zip) | [auto_reply](plugins/auto_reply/) |
-| **Bildirim Aralığı** | Aynı kişi ve hesap için bildirimler arasında varsayılan 30 saniye bırakır. | [notification_throttle.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/notification_throttle.zip) | [notification_throttle](plugins/notification_throttle/) |
-| **Quoter** | Mesaj sağ tık menüsünden ayarlanabilir alıntı kartı oluşturur. | [quoter.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/quoter.zip) | [quoter](plugins/quoter/) |
-| **Hızlı Çıkartmalar** | Mesaj alanında emoji simgesinin hemen sağına, doğrudan çıkartmaları açan düğme ekler. | [quick_stickers.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/quick_stickers.zip) | [quick_stickers](plugins/quick_stickers/) |
-| **bugfix** | Sohbet adının kullanılabilir genişliği doldurmasını sağlar; animasyon hazırlanırken çıkartmanın statik önizlemesini gösterir. Yeni düzeltmeler bu eklentiye eklenebilir. | [bugfix.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/bugfix.zip) | [bugfix](plugins/bugfix/) |
+| **Anti-Delete** | Retains deleted content already received locally and caches eligible audio/video. | [anti_delete.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/anti_delete.zip) | [anti_delete](plugins/anti_delete/) |
+| **Auto Responder** | Replies to configured text commands in selected chats after an adjustable delay. | [auto_reply.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/auto_reply.zip) | [auto_reply](plugins/auto_reply/) |
+| **Notification Throttle** | Leaves a configurable interval between notifications from the same sender and account; 30 seconds by default. | [notification_throttle.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/notification_throttle.zip) | [notification_throttle](plugins/notification_throttle/) |
+| **Quoter** | Creates customizable quote cards from a message's context menu. | [quoter.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/quoter.zip) | [quoter](plugins/quoter/) |
+| **Quick Stickers** | Adds a button immediately to the right of emoji that opens the Stickers tab directly. | [quick_stickers.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/quick_stickers.zip) | [quick_stickers](plugins/quick_stickers/) |
+| **bugfix** | Lets the chat title use the available header width and displays a static sticker preview while animation decoding finishes. Further fixes can be added here. | [bugfix.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/bugfix.zip) | [bugfix](plugins/bugfix/) |
 
-[Tüm sürümler ve SHA-256 dosyası](https://github.com/BenOnur/zapfast-plugins/releases).
+[All releases and SHA-256 checksums](https://github.com/BenOnur/zapfast-plugins/releases).
 
-## Uyumluluk
+## Compatibility
 
-| Eklenti | Gereken host |
+| Plugin | Required host |
 | --- | --- |
-| Bildirim Aralığı | API v1 veya daha yeni yerel eklenti host'u. |
-| Anti-Delete, Auto Responder, Quoter | API v2 veya daha yeni; yayımlanmış fork **v0.19.1** destekler. |
-| Hızlı Çıkartmalar | API v3 ve `on_composer_tools`. |
-| bugfix | API v3, `on_layout` ve `on_media_policy`. |
+| Notification Throttle | Local plugin API v1 or newer. |
+| Anti-Delete, Auto Responder, Quoter | API v2 or newer; the published fork **v0.19.1** supports them. |
+| Quick Stickers | API v3 with `on_composer_tools`. |
+| bugfix | API v3 with `on_layout` and `on_media_policy`. |
 
-İlk dört eklenti [yayımlanmış fork v0.19.1](https://github.com/BenOnur/zapfast/releases/tag/v0.19.1) ile kullanılabilir ve bu host'ta ilk kurulumda zaten oluşturulur. Hızlı Çıkartmalar ve güncel bugfix için gerekli yeni host kodu [0f5a3b4](https://github.com/BenOnur/zapfast/commit/0f5a3b4) ve sonrasında bulunur. **Hazır API v3 uygulama paketi henüz yayımlanmadı**; bu son iki eklenti için kaynak sürümünden derlenmiş uyumlu host gerekir. Resmî upstream uygulamasında yerel eklenti host'u bulunmaz.
+The first four plugins work with [fork v0.19.1](https://github.com/BenOnur/zapfast/releases/tag/v0.19.1) and are already seeded on that host's first migration. The host code required by Quick Stickers and current bugfix is available at [0f5a3b4](https://github.com/BenOnur/zapfast/commit/0f5a3b4) and later. **A ready-to-download API v3 application package has not been published yet**; those last two plugins currently require a compatible build from the fork's source. Official upstream builds do not contain this local plugin host.
 
-## Kurulum
+## Installation
 
-1. Uyumlu ZapFast'te **Ayarlar → Plugins → Eklenti klasörünü aç** seçeneğini kullan.
-2. İstediğin eklentinin ZIP dosyasını indir ve aç.
-3. İçindeki eklenti klasörünü (`anti_delete`, `auto_reply`, `notification_throttle`, `quoter`, `quick_stickers` veya `bugfix`) açılan eklenti klasörüne kopyala.
-4. **Yeniden yükle** düğmesine bas; eklentiyi ve istediğin ayarlarını aç.
+1. In a compatible ZapFast build, open **Settings > Plugins** and select **Eklenti klasörünü aç** (open plugin folder; the current host displays this label in Turkish).
+2. Download and extract the ZIP for the plugin you want.
+3. Copy its folder (`anti_delete`, `auto_reply`, `notification_throttle`, `quoter`, `quick_stickers`, or `bugfix`) into the plugin directory.
+4. Select **Yeniden yükle** (reload) and enable the plugin and its desired settings. The current host displays this button in Turkish as well.
 
-Doğru klasör düzeni:
+Expected directory layout:
 
 ```text
 plugins/
@@ -57,25 +59,25 @@ plugins/
     main.rhai
 ```
 
-Yalnız istediğin eklentileri kurabilirsin. Eklentileri Plugins ekranından kapatabilir veya klasörlerini kaldırıp yeniden yükleyebilirsin. Aynı eklentiyi güncellemeden önce kendi düzenlediğin dosyaları yedekle.
+Install only the plugins you want. Disable them in Plugins, or remove their folders and reload. Back up your own file edits before updating an existing plugin.
 
-## bugfix ayarları
+## bugfix settings
 
-- **Sohbet adı kullanılabilir alanı doldursun:** Başlıkta sağ düğmelerin alanının iki kez çıkarılmasını giderir.
-- **Çıkartmaları animasyonu beklemeden göster:** Yerel dosya hazırken animasyon çözümünü bekleyen çıkartmayı statik önizlemeyle gösterir; animasyon hazır olunca normal gösterime geçer. Henüz indirilmemiş dosyanın ağ beklemesini kaldırmaz.
+- **`header_title_width`:** Lets the chat title fill the remaining header width by avoiding a second reservation for the right-hand controls.
+- **`sticker_preview`:** Shows a static preview of a downloaded sticker while animation decoding finishes, then switches to the normal animation. It does not remove the network wait for files that have not downloaded yet.
 
-## Geliştirme ve paketleme
+## Development and packaging
 
-Kaynaklar `plugins/<id>/` altında tutulur. Kullanıcı hesabı, sohbet arşivi ve kişisel ayarlar bu depoya dahil değildir.
+Sources live in `plugins/<id>/`. The repository does not contain user accounts, chat archives, or personal settings.
 
 ```sh
 python scripts/package.py
 ```
 
-Komut her eklenti için `dist/<id>.zip` ve `dist/SHA256SUMS` üretir. ZIP yalnız ilgili klasör içindeki `plugin.json` ile `main.rhai` dosyalarını içerir. Dağıtılan sürümün host kaynak karşılığı ve kurulum ayrıntısı için sürüm notlarını oku.
+This creates `dist/<id>.zip` for each plugin and `dist/SHA256SUMS`. Each ZIP contains only that plugin's `plugin.json` and `main.rhai`. Consult release notes for the corresponding host source and installation requirements.
 
-Host API'si ve yerel doğrulama kodu: [ZapFast yerel eklenti belgeleri](https://github.com/BenOnur/zapfast/blob/main/docs/local-plugins.md). Desteklenen kancalardaki betik/ayar değişiklikleri yeniden derleme gerektirmez; yeni native yetenekler host güncellemesi gerektirir.
+Host API and validation code: [ZapFast local plugin documentation](https://github.com/BenOnur/zapfast/blob/main/docs/local-plugins.md). Script and setting changes within supported hooks reload without recompilation; new native capabilities require a host update.
 
-## Lisans
+## License
 
 [MIT](LICENSE).

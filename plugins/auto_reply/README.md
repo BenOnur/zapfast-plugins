@@ -1,12 +1,14 @@
 # Auto Responder
 
-Seçtiğin sohbetlerde gelen canlı metin komutlarına tanımladığın yanıtı gönderir. Geçmiş senkronizasyonu ve kendi mesajların yanıt tetiklemez. Host bağlantı, kilit ve sohbet uygunluğunu gönderimden önce yeniden denetler.
+[English](README.md) | [Türkçe](README.tr.md)
 
-- Host: API v2 veya daha yeni; fork v0.19.1 destekler.
-- Eklenti anahtarı açık gelse de `enabled` varsayılan **kapalıdır**.
-- `chats` ve `rules` varsayılan boş; kendi sohbet ve komutlarını Plugins ekranında seç.
-- `delay_seconds`: varsayılan 1 saniye.
+Replies to configured commands in eligible live incoming text messages in selected chats. History replay and your own messages do not trigger replies. Before sending, the host rechecks connection, lock state, and chat eligibility.
 
-Bu paket kişisel komut veya sohbet seçimi içermez.
+- Host: API v2 or newer; fork v0.19.1 is supported.
+- The plugin switch defaults to enabled, but its `enabled` setting defaults to **false**.
+- `chats` and `rules` start empty; configure your own chat selections and commands in Plugins.
+- `delay_seconds`: 1 second by default.
 
-[İndir](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/auto_reply.zip) · [Kurulum](../../README.md#kurulum)
+The download contains no personal commands or chat selections.
+
+[Download](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/auto_reply.zip) | [Installation](../../README.md#installation)
