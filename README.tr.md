@@ -6,6 +6,8 @@
 
 ## Eklentiler ve indirme
 
+**Kaynağa yeni eklendi:** [Quality of Life](plugins/quality_of_life/README.tr.md), mesajları sürükleyerek seçmek için Ctrl + sol tuş gerektirir. Yeni `on_input_policy` host kancası gerekir; ayrı public ZIP henüz yayımlanmadı. Mevcut altı indirme korunur.
+
 | Eklenti | Ne yapar? | İndir | Kaynak / ayarlar |
 | --- | --- | --- | --- |
 | **Anti-Delete** | Yerelde alınmış silinen içerikleri korur; uygun ses/video dosyalarını saklar. | [anti_delete.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/anti_delete.zip) | [anti_delete](plugins/anti_delete/README.tr.md) |

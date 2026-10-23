@@ -6,6 +6,8 @@ Optional local plugins for [BenOnur/ZapFast](https://github.com/BenOnur/zapfast)
 
 ## Plugins and downloads
 
+**New in source:** [Quality of Life](plugins/quality_of_life/) makes message-range dragging require Ctrl + the left mouse button. It requires the new `on_input_policy` host hook; its standalone public ZIP is not yet released. The six existing downloads below remain available.
+
 | Plugin | What it does | Download | Source and settings |
 | --- | --- | --- | --- |
 | **Anti-Delete** | Retains deleted content already received locally and caches eligible audio/video. | [anti_delete.zip](https://github.com/BenOnur/zapfast-plugins/releases/download/v1.1.0/anti_delete.zip) | [anti_delete](plugins/anti_delete/) |
